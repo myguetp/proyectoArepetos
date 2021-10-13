@@ -1,0 +1,319 @@
+:root{
+    --color1:rgb(219,144,.5);
+    --color2:rgb(255,255,204);
+    --color3:rgba(0, 0, 0, .5);
+    --fondo: rgb(10, 10, 0);
+    --titulos: 33px;
+    --espacios: 90px;
+    --espacios-contenido:45px;
+    --subtitulos:14px
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+ }
+
+ body{
+    font-family: 'open sans';
+    background: var(--fondo);
+}
+/*MENU DE NAVEGACIÓN*/
+
+nav{
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+  }
+
+.contenedor-nav{
+    display:flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    height:inherit;
+    overflow: hidden;  
+}
+
+nav .site-nav a{
+    display: inline-block;
+    padding: 5px 0;
+    margin-right: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    font-size: 20px;
+    color: var(--color1);
+}
+nav .site-nav a:hover{
+    border-bottom: 4px dotted var(--color1);
+    border-top: 4px dotted var(--color2);
+    transition: 0.6s; 
+    color: var(--color2);
+}
+
+.logo, .logo img{
+    width: 130px;
+    
+}
+
+/***/
+
+.slideshow-container{
+    margin-top: 60px;    
+
+}
+
+.mySlides img{    
+   width: 100%;
+   height: 850px
+
+    
+}
+
+h2{
+    color: var(--color1);
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-left: var(--espacios);
+    text-shadow: 5px 5px 9px var(--color2);
+}
+
+/*COMIDAS*/
+
+.wrap{
+    width: 1100px;
+    display:flex;
+    
+    
+}
+
+.tarjeta-wrap{
+    margin:20px;
+    -webkit-perspective: 700;
+    perspective: 700;
+    
+}
+
+.tarjeta{
+    width: 430px;
+    height: 450px;
+    border-radius: 20%;
+    background:rgb(10, 10, 0);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .8s ease;
+    -webkit-box-shadow: 0px 0px 15px -5px rgba(102, 79, 5, 0.911);
+    -moz-box-shadow:0px 0px 15px -5px rgba(102, 79, 5, 0.911);
+    box-shadow:0px 0px 15px -5px rgba(102, 79, 5, 0.911);
+    
+}
+
+.adelante, .atras{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+
+}
+
+.adelante{
+    width: 100%;
+    border-radius: 20%;
+    
+}
+
+.adelante .menciones{
+    color:white;
+    text-align:center;
+    margin-top: 350px;
+    font-size: 50px;    
+}
+
+.atras{
+    transform: rotateY(180deg);
+
+}
+
+.atras .menu{
+    padding: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+}
+
+.menu li{
+    color:var(--color1);
+    padding-top: 15px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.tarjeta-wrap:hover .tarjeta{
+    transform: rotateY(180deg);
+
+}
+
+
+.card1{
+    background-image: url(imagenes/estilo1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: center;
+    margin-left: 0px;
+    opacity:55%;
+    
+    
+
+}
+.card2{
+    background-image: url(imagenes/estilo6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: center;
+    margin-left: 0px;
+    opacity:55%;
+}
+.card3{
+    background-image: url(imagenes/estilo3.png);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    position: center;
+    margin-left: 35px;
+}
+.card4{
+    background-image: url(imagenes/estilo2.png);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    position: center;
+    margin-left: 35px;
+}
+
+.card5{
+    background-image: url(imagenes/estilo2.png);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    position: center;
+    margin-left: 35px;
+}
+
+.card6{
+    background-image: url(imagenes/estilo2.png);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    position: center;
+    margin-left: 35px;
+}
+
+.card7{
+    background-image: url(imagenes/estilo2.png);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    position: center;
+    margin-left: 35px;
+}
+
+.card8{
+    background-image: url(imagenes/estilo2.png);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    position: center;
+    margin-left: 35px;
+}
+/*BEBIDAS*/
+
+/*fOOTER*/
+
+footer{
+    background: #000;
+    height: auto;
+    padding-top: 10px;
+} 
+.first_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+    
+}
+
+
+.first_footer h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 15px;
+    color: #fff;
+}
+
+.first_footer li{
+    margin-top: 10px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  
+    
+}
+
+.first_footer li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-top: 50px;
+}
+
+
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+}
+
+.socials li{
+    margin: 0 2px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff5ea;
+  
+}
+
+.socials a i{
+    font-size: 28px;
+    
+}
+
+.footer-boottom{
+  background: #000;
+  width: 98%;
+  padding: 10px 0;
+  text-align: center;
+
+}
+
+.footer-boottom p{
+    color: #fff;
+
+}
