@@ -255,6 +255,7 @@ h2{
 .tarjetas ul{
     color: var(--color2);
     text-align:center;
+    background:red;
 }
 
 /*fOOTER*/
