@@ -27,6 +27,8 @@ nav{
     position: fixed;
     height: 80px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    z-index: 100;
+    background:var(--fondo);
   }
 
 .contenedor-nav{
@@ -235,6 +237,25 @@ h2{
     margin-left: 35px;
 }
 /*BEBIDAS*/
+
+.tarjetas h4{
+    color:var(--color1);
+    background:var(--fondo);
+    text-align:center;
+    margin-top: var(--espacios)
+}
+
+.tarjetas img {
+    width: 200px;
+    height:200px;
+    opacity: 60%;
+    margin-left: 155px;
+}
+
+.tarjetas ul{
+    color: var(--color2);
+    text-align:center;
+}
 
 /*fOOTER*/
 
