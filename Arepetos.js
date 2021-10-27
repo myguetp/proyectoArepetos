@@ -1,5 +1,3 @@
-
-
 var slideIndex = 0;
 showSlides();
 
@@ -15,13 +13,3 @@ function showSlides(){
     setTimeout(showSlides,8000);
 
 };
-
-
-function show(){
-    document.getElementById("burguerClasica").style.image("imagenes/estilo2.png");
-    document.getElementById("burguerClasica").style.width=40;
-    document.getElementById("burguerClasica").style.background="red";
-
-
-
-    }   

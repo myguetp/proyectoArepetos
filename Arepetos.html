@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b426ddce04.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Arepetos.css">
     <title>Arepetos</title>
 </head>
 <body>
     <!--MENU DE NAVEGACION DE LA PAGINA WEB-->
-    <header>        
+    <header>  
+           <a href="https://api.whatsapp.com/send?phone=3003066369" class="btn-whatsapp" target="_brank">
+        <i class="fab fa-whatsapp"></i>
+    </a>      
         <nav id="nav" class="nav1">
             <div class="contenedor-nav">
             <div class="logo">
                    <img src="imagenes/logo.png" alt="">
             </div>
             <div class="site-nav" id="site-nav">
-            <a href="#" id="#" class="#">Inicio</a>
-            <a href="#" id="#" class="#">Comidas</a>
-            <a href="#" id="#" class="#">Bebidas</a>
+            <a href="#" id="enlace-inicio" class="#">Inicio</a>
+            <a href="#" id="enlace-comida" class="#">Menu</a>
+            <a href="#" id="enlace-bebida" class="#">Bebidas</a>
+            <a href="#" id="enlace-encuentranos" class="#">Encuentranos</a>
             <a href="Conocenos.html" id="#" class="#">Conocenos</a>  
             </div>    
             <div id="menu-toggle" class="menu-toogle" onclick="cambiarClase()">
@@ -28,46 +35,55 @@
         </div>        
         </nav>
     </header>
+    <a href="https://api.whatsapp.com/send?phone=+573134620806" class="btn-whatsapp" target="_brank">
+        <i class="fab fa-whatsapp"></i>
+    </a> 
     <!--SLIDER DE IMAGENES-->
     <br>
      <section class="slideshow-container">
         <div class="mySlides fade">
             <div class="numbertext"></div>
+            <p class="prueba">comete una rica hamburguesa</p>
             <img src="imagenes/posicion1.png" >
-            
+           
             </div>
             <div class="mySlides fade">
             <div class="numbertext"></div>
+            <p class="prueba">Disfruta en familia</p>
             <img src="imagenes/posicion2.png" >
-            
+           
             </div> 
             <div class="mySlides fade">
             <div class="numbertext"></div>
+            <p class="prueba">comete una rica hamburguesa</p>       
             <img src="imagenes/posicion3.png" >
-            
+                 
             </div>
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <img src="imagenes/posicion4.png" >                
+                <p class="prueba">comete una rica hamburguesa</p>  
+                <img src="imagenes/posicion4.png" >   
+                           
             </div>
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <img src="imagenes/posicion5.png" >                
+                <p class="prueba">comete una rica hamburguesa</p>  
+                <img src="imagenes/posicion5.png" >    
+                          
             </div>
     </section>
+
+
     <!--MENU DE COMIDAS--> 
-    <div>
-        <h2>comidas</h2>
-    </div>
-    <div class="wrap">
+    <div class="wrap" id="comida">
         <div class="tarjeta-wrap">
             <div class="tarjeta">
-                <div class="adelante card1"><h3 class="menciones">Arepas<h3></div>
+                <div class="adelante card1"><h3 class="menciones">Arepas</div>
                 <div class="atras">
                     <div class="menu">
                     
                     <ul>   
-                    <li> areburguer arepetos</li>
+                    <li>areburguer arepetos</li>  
                     <li> choriespecial</li>
                     <li> especial arepetos</li>
                     <li> Baby beef</li>
@@ -83,7 +99,7 @@
         </div>
         <div class="tarjeta-wrap">
             <div class="tarjeta">
-                <div class="adelante card2"><h3 class="menciones">Hamburguesas<h3></h3></div>
+                <div class="adelante card2"><h3 class="menciones">Hamburguesas</div>
                 <div class="atras">
                     <div class="menu">
                         
@@ -101,7 +117,7 @@
         </div>
         <div class="tarjeta-wrap">
             <div class="tarjeta">
-                <div class="adelante card3"><h3 class="menciones">Carnes<h3></h3></div>
+                <div class="adelante card3"><h3 class="menciones">Carnes</div>
                 <div class="atras">
                     <div class="menu">
                     
@@ -118,7 +134,7 @@
         </div>
         <div class="tarjeta-wrap">
             <div class="tarjeta">
-                <div class="adelante card4"><h3 class="menciones">Alitas<h3></h3></div>
+                <div class="adelante card4"><h3 class="menciones">Alitas</div>
                 <div class="atras">
                     <div class="menu">
                     <ul> 
@@ -136,7 +152,7 @@
     <div class="wrap">
         <div class="tarjeta-wrap">
             <div class="tarjeta">
-                <div class="adelante card5"><h3 class="menciones">hotdog<h3></div>
+                <div class="adelante card5"><h3 class="menciones">hotdog</div>
                 <div class="atras">
                     <div class="menu">
                     
@@ -151,7 +167,7 @@
         </div>
         <div class="tarjeta-wrap">
             <div class="tarjeta">
-                <div class="adelante card6"><h3 class="menciones">salchipapa<h3></h3></div>
+                <div class="adelante card6"><h3 class="menciones">salchipapa</div>
                 <div class="atras">
                     <div class="menu">
                         
@@ -168,7 +184,7 @@
         </div>
         <div class="tarjeta-wrap">
             <div class="tarjeta">
-                <div class="adelante card7"><h3 class="menciones">mazorcadas<h3></h3></div>
+                <div class="adelante card7"><h3 class="menciones">mazorcadas</div>
                 <div class="atras">
                     <div class="menu">
                     
@@ -184,7 +200,7 @@
         </div>
         <div class="tarjeta-wrap">
             <div class="tarjeta">
-                <div class="adelante card8"><h3 class="menciones">para picar<h3></h3></div>
+                <div class="adelante card8"><h3 class="menciones">para picar</div>
                 <div class="atras">
                     <div class="menu">
                     <ul> 
@@ -202,26 +218,23 @@
     </div>
 
 <!---Bebidas-->
-    <div>
-         <h2>Bebidas</h2>
-    </div>
-    <div class="contenedor">
+     <div class="contenedor" id="bebida">
         <div class="tarjetas">
-            <h4>jugos naturales</h4> 
             <img src="imagenes/bebida1.png">
             <ul> 
-                <li>limonada de coco</li>           
-                <li>limonada cedezada</li>
-                <li>maracumango</li>
-                <li>limonada hierbabuena</li>
-                <li>limonada natural</li>
-                <li>jugo en agua</li>
-                <li>jugo en leche</li>
-                <li>jugo frappé</li>
+                <li>limonada de coco<b>.................................... $ 5,0</b></li>           
+                <li>limonada cedezada<b>................................... $ 4,0</b></li>
+                <li>maracumango<b>......................................... $ 4,5</b></li>
+                <li>limonada hierbabuena<b>................................ $ 4,0</b></li>
+                <li>limonada natural<b>.................................... $ 3,0</b></li>
+                <li>jugo en agua<b>........................................ $ 3,8</b></li>
+                <li>jugo en leche<b>....................................... $ 4,8</b></li>
+                <li>jugo frappé<b>......................................... $ 4,0</b></li>
             </ul>
+       
+            
         </div>
         <div class="tarjetas">        
-            <h4>cervezas</h4>
             <img src="imagenes/bebida3.png">
             <ul> 
                 <li>corona</li>     
@@ -231,7 +244,6 @@
             </ul>
         </div>
         <div class="tarjetas">      
-            <h4>gaseosas</h4> 
             <img src="imagenes/bebida2.png">
             <ul> 
                 <li>coca~cola</li>   
@@ -240,10 +252,11 @@
             </ul>           
         </div>
     </div>
-    <footer>
+    <footer id="encuentranos">
         <section class="first_footer">
             
             <img src="imagenes/logo.png" alt="">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.579198252148!2d-74.10633028474936!3d4.6688597432316685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b75bc785795%3A0xfbcf7dc0847aa8c3!2sAREPETOS!5e0!3m2!1sen!2sco!4v1635352732024!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <ul class="socials">
                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -256,6 +269,9 @@
           <p>Copyright &copy;2021 <small>Diseñado<span>JMTP_ForArepetos</span></small></p>
       </section>
     </footer>
+    <script src="jquery.js"></script>
+    <script src="filtro.js"></script>
     <script src="Arepetos.js"></script>
+
 </body>
 </html>
