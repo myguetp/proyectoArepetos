@@ -4,7 +4,7 @@
     --color3:rgba(0, 0, 0, .5);
     --fondo: rgb(10, 10, 0);
     --titulos: 33px;
-    --espacios: 90px;
+    --espacios: 20px;
     --espacios-contenido:45px;
     --subtitulos:14px
 }
@@ -68,8 +68,8 @@ nav .site-nav a:hover{
 .btn-whatsapp{
     background:rgb(37, 119, 34);    
     position: fixed;
-    width: 90px;
-    height: 90px;
+    width: 45px;
+    height: 55px;
     line-height: 55px;
     bottom:30px;
     color:#fff;
@@ -85,7 +85,7 @@ nav .site-nav a:hover{
 }
 
 .btn-whatsapp i{
-    font-size: 80px;
+    font-size: 40px;
 }
 
 /***/
@@ -137,8 +137,8 @@ h2{
 }
 
 .tarjeta{
-    width: 430px;
-    height: 450px;
+    width: 440px;
+    height: 455px;
     border-radius: 20%;  
     background:rgba(8, 8, 1, 0.76);
     position: relative;
@@ -147,7 +147,7 @@ h2{
     -webkit-box-shadow: 0px 0px 15px -5px rgba(102, 79, 5, 0.911);
     -moz-box-shadow:0px 0px 15px -5px rgba(102, 79, 5, 0.911);
     box-shadow:0px 0px 15px -5px rgba(102, 79, 5, 0.911);
-    
+    z-index: 0;
 }
 
 .adelante,.atras{
@@ -157,8 +157,8 @@ h2{
     top:0;
     left:0;
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    
+    backface-visibility: hidden; 
+    z-index: 0;   
 
 }
 
@@ -172,14 +172,21 @@ h2{
 .adelante .menciones{
     color: var(--color2);
     text-align:center;
-    margin-top: 350px;
+    margin-top: 320px;
     font-size: 30px;    
 }
 
 .atras{
     transform: rotateY(180deg);
     z-index:100;
+    overflow: auto;
 
+}
+
+.atras::-webkit-scrollbar{
+    width: 2px;
+    background: transparent;
+    height: 100%
 }
 
 .atras .menu{
@@ -195,7 +202,7 @@ h2{
 .menu li{
     color:var(--color2);
     padding-top: 15px;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     font-weight: 600;
     cursor: pointer;
@@ -279,6 +286,23 @@ h2{
     margin-left: 0px;
     opacity:55%;
 }
+
+/*info comida*/
+
+.info-comida{
+    background-color: var(--color2);
+    width: 100%;
+    border-radius: 20%;
+    padding: var(--espacios);
+    position: relative;
+    z-index:0;
+    
+}
+
+.info-comida .precio{
+    font-size: 30px;
+}
+
 /*BEBIDAS*/
 
 .tarjetas{
@@ -303,17 +327,17 @@ h2{
 }
 
 .tarjetas img {
-    width: 200px;
-    height:200px;
+    width: 250px;
+    height: 250px;
     opacity: 60%;
-    margin-left: 255px;
+    margin-left: 350px;
 }
 
 .tarjetas ul{
     color: var(--color2);
     text-align:center;
     padding-top: 20px;
-    margin-left: 300px;
+    margin-left: 40px;
     width: 580px;
     list-style:none;
 }
@@ -514,10 +538,8 @@ footer{
   
 }
    
-.mySlides img{    
-   width: 450px;
+.mySlides img{     
    height: 450px;
-   opacity:45%;
     
 }
 
@@ -542,7 +564,7 @@ h2{
 
 .wrap{
     width: 1100px;
-    display:inline;
+    display:inline-flex;
 
 }
 
@@ -580,7 +602,7 @@ h2{
     margin-left: 15px;
     margin-right: 0px;
     position: relative;
-    display: inline-block;
+    display: block;
     margin-top: 10px;
     padding: 10px;
     border-radius: 10px 20px 30px 40px;
