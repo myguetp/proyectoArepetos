@@ -179,7 +179,9 @@ h2{
 .atras{
     transform: rotateY(180deg);
     z-index:100;
-    overflow: auto;
+    overflow-y: auto;
+    background-color: transparent;
+    border-radius: 20%;
 
 }
 
@@ -197,7 +199,9 @@ h2{
     text-align: center;
     background: transparent;
 }
-
+.menu ul{
+    display: block;
+}
 
 .menu li{
     color:var(--color2);
@@ -214,7 +218,6 @@ h2{
     transform: rotateY(180deg);
 
 }
-
 
 .card1{
     background-image: url(imagenes/arepapo.png);
@@ -296,13 +299,33 @@ h2{
     padding: var(--espacios);
     position: relative;
     z-index:0;
+    display:block;
     
 }
 
 .info-comida .precio{
     font-size: 30px;
+    font-weight: 800;
 }
 
+.info-comida p{
+    font-size: 20px;
+}
+
+.info-comida .mybtn{
+    background: var(--color3);
+    color: var(--fondo);
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.info-comida .mybtn:hover{
+    background: var(--color2);
+    color: var(--color3);
+}
 /*BEBIDAS*/
 
 .tarjetas{
@@ -602,7 +625,7 @@ h2{
     margin-left: 15px;
     margin-right: 0px;
     position: relative;
-    display: block;
+    display:block;
     margin-top: 10px;
     padding: 10px;
     border-radius: 10px 20px 30px 40px;
@@ -647,4 +670,6 @@ iframe{
     width:350px;
     height:300px;
 }
+
 }
+

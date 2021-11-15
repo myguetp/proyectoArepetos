@@ -4,8 +4,8 @@
     --color3:rgba(0, 0, 0, .5);
     --fondo: rgb(10, 10, 0);
     --titulos: 33px;
-    --espacios: 90px;
-    --espacios-contenido:45px;
+    --espacios: 20px;
+    --espacios-contenido:20px;
     --subtitulos:14px
 }
 
@@ -62,6 +62,83 @@ nav .site-nav a:hover{
     width: 150px;
     
 }
-.mision{
-    margin-top: 80px;
+/******/
+.contenedores{
+    width: 100%;
+    height:900px;
+    margin-top: 60px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    
 }
+
+
+.contenedor{
+    background: var(--color1); 
+    display: inline-block;
+    margin: var(--espacios) ;
+}
+.contenedor p{
+    width: 580px;
+    padding: var(--espacios-contenido);
+}
+
+.contenedor button{
+    width: 100%;
+    cursor: pointer;
+    height: 50px
+}
+
+.contenedor .btn{
+    background-color: red;
+    width: 25px;
+    height: 100%
+
+}
+
+.contenedor #contenido{
+    display: none;
+}
+
+.contenedor #contenido2{
+    display: none;
+    width: 580px;
+}
+
+#contenido2 form{
+    display:block;
+}
+
+form{
+    width: 200px;
+    padding: var(--espacios);    
+}
+input{
+    width: 400px;
+}
+
+
+.contenedor #contenido3{
+    display: none;
+    width: 580px;
+}
+/******/
+.contenedor img{
+    width: 580px;
+    height: 450px;
+}
+
+#contenido{
+    display: none;
+}
+
+#contenido2{
+    display: none;
+}
+
+#contenido3{
+    display: none;
+}
+/******/
