@@ -16,16 +16,18 @@
     <!--MENU DE NAVEGACION DE LA PAGINA WEB-->
     <header>       
         <nav id="nav" class="nav1">
-            <div class="contenedor-nav">
+            <div class="contenedor-nav grid-container">
             <div class="logo">
-                   <img src="imagenes/logo.png" alt="">
+                   <a href="Conocenos.html" id="conocenos" class="#"><img src="imagenes/logo.png" alt=""></a>
+                   
             </div>
             <div class="site-nav" id="site-nav">
+                 
             <a href="#" id="enlace-inicio" class="#">Inicio</a>
             <a href="#" id="enlace-comida" class="#">Menu</a>
             <a href="#" id="enlace-bebida" class="#">Bebidas</a>
             <a href="#" id="enlace-encuentranos" class="#">Encuentranos</a>
-            <a href="Conocenos.html" id="#" class="#">Conocenos</a>  
+            
             </div>    
             <div id="menu-toggle" class="menu-toogle" onclick="cambiarClase()">
                 <div class="hamburguer"></div>
@@ -38,35 +40,30 @@
     </a> 
   
     <!--SLIDER DE IMAGENES-->
-    <br>
-     <section class="slideshow-container">
+ 
+     <section class="slideshow-container grid-container">
         <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <p class="prueba">comete una rica hamburguesa</p>
+            <div class="numbertext"></div>            
             <img src="imagenes/posicion1.png" >
            
             </div>
             <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <p class="prueba">Disfruta en familia</p>
+            <div class="numbertext"></div>            
             <img src="imagenes/posicion2.png" >
            
             </div> 
             <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <p class="prueba">yo tambien quiero un perro</p>       
+            <div class="numbertext"></div>              
             <img src="imagenes/posicion3.png" >
                  
             </div>
             <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <p class="prueba">que rico una mazorcada</p>  
+                <div class="numbertext"></div>               
                 <img src="imagenes/posicion4.png" >   
                            
             </div>
             <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <p class="prueba">las mejores arepas</p>  
+                <div class="numbertext"></div>                 
                 <img src="imagenes/posicion5.png" >    
                           
             </div>
@@ -570,57 +567,49 @@
         </div>    
          
     </div>
+    <!--Bebidas-->
+    <div class="bebidas" id="bebida">
+        <div class="todas-bebidas grid-container">           
+            <ul class="jugos">                
+                <li>Limonada Coco</li><n>5,0</n>
+                <li>Limonada Cerezada</li><n>4,0</n>
+                <li>Maracumango</li><n>4,5</n>
+                <li>Limonada Hierbabuena</li><n>4,0</n>
+                <li>Limonada Natural</li><n>3,0</n>
+                <li>Jugo en Agua</li><n>3,8</n>
+                <li>Jugo en leche</li><n>4,8</n>
+                <li>Jugo Frappé</li><n>4,0</n>
+            </ul>
+            <ul class="bebidas-diferentes">
+                <li>Jugos hit</li><n>3,0</n>
+                <li>Gaseosa</li><n>3,0</n>
+                <li>Agua</li><n>3,0</n>
+                <li>Cerveza nacional</li><n>3,5</n>
+                <li>Cerveza club Colombia </li><n>5,0</n>
+                <li>Limonada Corona</li><n>8,0</n>
+                <li>Cola y Pola</li><n>3,5</n>
 
-<!---Bebidas-->
-     <div class="contenedor" id="bebida">
-        <div class="tarjetas">
-            <img src="imagenes/bebida1.png">
-            <ul> 
-                <li>limonada de coco<b> .................................... $ 5,0</b></li>           
-                <li>limonada cedezada<b> .................................. $ 4,0</b></li>
-                <li>maracumango<b> ......................................... $ 4,5</b></li>
-                <li>limonada hierbabuena<b> ................................ $ 4,0</b></li>
-                <li>limonada natural<b> .................................... $ 3,0</b></li>
-                <li>jugo en agua<b> ........................................ $ 3,8</b></li>
-                <li>jugo en leche<b> ....................................... $ 4,8</b></li>
-                <li>jugo frappé<b> ......................................... $ 4,0</b></li>
             </ul>
-       
-            
-        </div>
-        <div class="tarjetas">        
-            <img src="imagenes/bebida3.png">
-            <ul> 
-                <li>corona<b> ....................................... $ 8,0</b></li>     
-                <li>club colombia<b> ................................ $ 5,0</b></li>
-                <li>nacional<b> ..................................... $ 3,5</b></li>      
-           
-            </ul>
-        </div>
-        <div class="tarjetas">      
-            <img src="imagenes/bebida2.png">
-            <ul> 
-                <li>coca~cola<b> .................................... $ 3,5</b></li>   
-                <li>jugos hit<b> .................................... $ 3,0</b></li> 
-                <li>cola y pola<b> .................................. $ 5,5</b></li>
-                <li>agua<b> ......................................... $ 3,0</b></li>
-            </ul>           
         </div>
     </div>
+    <br/>   
     <footer id="encuentranos">
         <section class="first_footer">            
             <img src="imagenes/logo.png" alt="">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.579198252148!2d-74.10633028474936!3d4.6688597432316685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b75bc785795%3A0xfbcf7dc0847aa8c3!2sAREPETOS!5e0!3m2!1sen!2sco!4v1635352732024!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.579198252148!2d-74.10633028474936!3d4.6688597432316685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b75bc785795%3A0xfbcf7dc0847aa8c3!2sAREPETOS!5e0!3m2!1sen!2sco!4v1635352732024!5m2!1sen!2sco" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <ul class="socials">
                 <li>siguenos en nuestras redes sociales</li>     
                 <li><a href="https://www.facebook.com/arepetoscol"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="https://www.instagram.com/arepetos/"><i class="fab fa-instagram"></i></a></li>                   
             </ul>
+            <p class="sello">Copyright &copy;2021 <small>Made<span>JMTP_ForArepetos</span></small></p>
       </section>  
-      <section class="footer-boottom">
-          <p>Copyright &copy;2021 <small>Made<span>JMTP_ForArepetos</span></small></p>
-      </section>
+      
     </footer>
+
+
+
+
     <script src="jquery.js"></script>
     <script src="filtro.js"></script>
     <script src="Arepetos.js"></script>

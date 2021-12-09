@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="conocenos.css">
+    <script src="https://kit.fontawesome.com/b426ddce04.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="conocenos.css">    
     <title>Conocenos</title>
 </head>
 <body>
@@ -24,40 +25,45 @@
         </nav>
     </header>
     <br>
-    <div class="contenedores">
-        <div class="contenedor">
-            <img src="imagenes/conocenos.png">
-            <div>
-                <p>Arepetos es una empresa familiar la cual se de dedica a la producción y comercialización de arepas de maíz peto en
-                     un punto de venta en Bogotá donde podra encontrar diferentes productos comó  arepas y hamburguesas de una gastronomía artesanal.</p>
-            </div>
-            <button id="boton" onclick="mostrar()"> conocer mas </button>
+    <section class=grid-container>
 
-              
+        <div>
+            <div>
+            <h2>conocenos</h2>
+            <img src="imagenes/conocenos.png">
+            <p>Arepetos es una empresa familiar la cual se de dedica a la producción y comercialización de arepas de maíz peto en
+                un punto de venta en Bogotá donde podra encontrar diferentes productos comó  arepas y hamburguesas de una 
+                gastronomía artesanal.</p>
+               <i class="fas fa-angle-double-down" onclick="mostrar()"></i>
+            </div>
             <div id="contenido">
-                <button class="btn" id="burron" onclick="ocultar()"> X </button>
-                <h2>mision</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, assumenda veritatis 
-                    reiciendis numquam eos natus veniam nostrum nihil accusantium doloremque dolore dolores
-                     saepe architecto non, quisquam ut cum pariatur esse?</p>
-                <h2>vision</h2> 
+                <i class="fas fa-angle-double-up" onclick="ocultar()"></i>
+
+                <h3>mision</h3>
+                <p>Dar al mercado de las comidas rápidas   un concepto tradicional e  innovador sobre nuestros sabores y 
+                    tradiciones Colombianas combinando  platos que le permita el uso del   maíz peto donde no solo se hacen 
+                    arepas si no tambien hamburgesas  coitan al cliente tener una experiencia gastronómica diferente 
+                    en la ciudad de Bogotá.
+                </p>
+                <h3>vision</h3> 
                 <p>Queremos crear un modelo de negocio más sostenible que nos permita  abrir nuevos puntos 
                     de venta en la ciudad de Bogotá,empezando con dos  puntos de venta más  ofreciendo siempre 
                     la mejor calidad y servicio humano a nuestros clientes conservando nuestros principios éticos
-                     como empresa.</p>                
+                    como empresa.</p>  
             </div>
-         
         </div>
-        <div class="contenedor">
-            <img src="imagenes/franquicia.png">
+
+        <div>
             <div>
-                <p> Arepetos le presta su establecimiento para que pueda disfrutar en familia y con amigos las mejor experiencia en su dia especial 
-                    en un espacio independiente y comodo donde peude celebrar cumpleaños, grados o cualquier celebridad que desee, para mas información
-                    dando click en Evento Arepetos </p>
+            <h2>eventos</h2>
+            <img src="imagenes/conocenos.png">
+            <p>Arepetos le presta su establecimiento para que pueda disfrutar en familia y con amigos las mejor experiencia en su dia especial 
+                en un espacio independiente y comodo donde peude celebrar cumpleaños, grados o cualquier celebridad que desee, para mas información
+                dando click en Evento Arepetos</p>
+                <i class="fas fa-angle-double-down" onclick="mostrar2()"></i>
             </div>
-            <button id="boton" onclick="mostrar2()"> evento arepetos </button>
             <div id="contenido2">
-                <button class="btn" id="burron" onclick="ocultar2()"> X </button>
+                <i class="fas fa-angle-double-up" onclick="ocultar2()"></i>
                 <p>Enviar a nuestro whatsapp, al cual puede acceder dando click en contacto la siguente información:
                     <ul>
                         <li>Nombre y apellido</li>
@@ -67,26 +73,29 @@
                         <li>Numero de personas que asistiran al evento</li>
                     </ul>
                 <a href="https://api.whatsapp.com/send?phone=+573134620806" text="bienvenido a arepetos" class="btn-whatsapp" target="_brank">
-                    <button>contacto</button>
+                    <button class="my-btno">contacto</button>
                 </a> 
                 
             </div>
+
         </div>
-        <div class="contenedor">
-            <img src="imagenes/franquicia.png">
+
+        <div>
             <div>
-                <p>Arepetos es una empresa reconocida en la cidad de Bogotá con grandes extandares de calidad la cual la
-                    convierte en un modelo favorable en el sector de los alimentos. si desea ser parte de esta familia 
-                    y poder tener una de nuestras franquicias dando click en franquicias arepetos encontrara mayor información</p>
+            <h2>franquicias</h2>
+            <img src="imagenes/franquicia.png">
+            <p>Arepetos es una empresa reconocida en la cidad de Bogotá con grandes extandares de calidad la cual la
+                convierte en un modelo favorable en el sector de los alimentos. si desea ser parte de esta familia 
+                y poder tener una de nuestras franquicias dando click en franquicias arepetos encontrara mayor información</p>
+                <i class="fas fa-angle-double-down" onclick="mostrar3()"></i>
             </div>
-            <button id="boton" onclick="mostrar3()"> franquicia arepetos </button>
             <div id="contenido3">
-                <button class="btn" id="burron" onclick="ocultar3()"> X </button>
+                <i class="fas fa-angle-double-up" onclick="ocultar3()"></i>
                 <p>Gracias por estar interesado en ser parte de la familia arepetos el analisis de la solicitud consta de 3 días, posterior
                     a ello si solicitud es aprobada tendra un periodo de entrenamiento de 2 meses donde conocera más a fondo el negocio y sus
                     productos. 
                 </p>
-                <p>Enviar a nuestro whatsapp al cual puede acceder dando click en contacto la siguente información:
+                <p>Enviar a nuestro whatsapp al cual puede acceder dando click en nuestro boton de contacto dando la siguente información:
                     <ul>
                         <li>Nombre y apellido</li>
                         <li>Edad</li>
@@ -96,15 +105,20 @@
                         <li>Telefono</li>
                         <li>Email</li>
                         <li>Profesión</li>
-                        <li>Indicar las razones por las cuales quiere abrir una franquicia en ese lugar</li>
+                        <li>¿Por que quiere una franquicia?</li>
                     </ul>
                 </p>
                 <a href="https://api.whatsapp.com/send?phone=+573134620806" class="btn-whatsapp" target="_brank">
-                    <button>contacto</button>
+                    <button class="my-btno">contacto</button>
                 </a>                 
             </div>
+
         </div>
-    </div>
+        
+
+
+    </section>
+    
     
         <script src="conocenos.js"></script>
 </body>
